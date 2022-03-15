@@ -31,7 +31,6 @@ const Footer = ()=>{
                     </li>    
                 </ul>
 
-                <Card name="Henshaw Edoho" />
             </div>
        </footer>
     );
