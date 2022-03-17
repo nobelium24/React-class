@@ -3,10 +3,10 @@ import { Link, useParams } from "react-router-dom"
 
 const Signup = ()=> {
 
-    const params = useParams();
+    const {role, country} = useParams();
 
     useEffect(()=> {
-        console.log(params)
+        console.log(role, country)
     }, [])
 
 
@@ -16,10 +16,10 @@ const Signup = ()=> {
 
             <div className="card text-center">
                 <div className="card-header">
-                    {params.country}
+                    {country}
                 </div>
                 <div className="card-body">
-                    <h5 className="card-title">Signup as a {params.role}</h5>
+                    <h5 className="card-title">Signup as a {role}</h5>
                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>

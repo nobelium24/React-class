@@ -10,10 +10,7 @@ const UserNav = ()=>{
                     <Link to={"/user"} className="nav-link">Dashboard</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={"/user/wallet"} className="nav-link">Wallet</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to={"/user/exchange"} className="nav-link">Exchange</Link>
+                    <Link to={"/user/profile"} className="nav-link">Profile</Link>
                 </li>
             </ul>
             <form className="d-flex">

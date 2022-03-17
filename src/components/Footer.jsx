@@ -2,8 +2,8 @@ import Card from "./Card";
 
 const Footer = ()=>{
     return (
-       <footer className="bg-danger p-4">
-            <div>
+       <footer className=" p-4">
+            {/* <div>
                 <ul className="nav">
                     <li className="nav-item">
                         <a href="" className="nav-link">home</a>
@@ -31,7 +31,7 @@ const Footer = ()=>{
                     </li>    
                 </ul>
 
-            </div>
+            </div> */}
        </footer>
     );
 }
