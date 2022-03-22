@@ -1,24 +1,20 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom"
-const Login = ()=> {
-    return (
-        <main>
-            <Link to={"/"}>Home</Link>
+import AuthContext from "../context/AuthProvider";
+import DefaultLayout from "../layouts/DefaultLayout";
 
-            <div className="card text-center">
-  <div className="card-header">
-    Featured
-  </div>
-  <div className="card-body">
-    <h5 className="card-title">Welcome to Login</h5>
-    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-  <div className="card-footer text-muted">
-    2 days ago
-  </div>
-</div>
-            <Link to={"/signup"}>Sign up if ou dont have account</Link>
-        </main>
+
+const Login = ()=> {
+
+    const {loggedIn} = useContext(AuthContext)
+
+    return (
+
+        <DefaultLayout>
+
+          <h1>{loggedIn ? "User is in" : "user is out"}</h1>
+
+        </DefaultLayout>
     );
 }
 
