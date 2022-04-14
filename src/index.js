@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css';
-import './index.css';
 import App from './App';
+// import 'antd/dist/antd.css';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom"
-import {AuthProvider}  from "./context/AuthProvider" 
+// import { BrowserRouter } from "react-router-dom"
+// import {AuthProvider}  from "./context/AuthProvider"
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-       <AuthProvider>
-           <App />
-       </AuthProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+    {/* <BrowserRouter> */}
+       {/* <AuthProvider> */}
+          <App />
+       {/* </AuthProvider> */}
+    {/* </BrowserRouter> */}
+   </React.StrictMode>,
+   document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

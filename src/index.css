@@ -1,15 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ #mainone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#maindiv {
+  background-color: rgb(61, 60, 60);
+  border: 1px solid white;
+  height: 65vh;
+  width: 30%;
 }
 
+#displayDiv {
+  width: 100%;
+  height: 35%;
+}
 
+#mainKeyDiv {
+  width: 100%;
+  height: 80%;
+}
+
+#functionDiv {
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+#key,
+#key1 {
+  width: 25%;
+  height: 100%;
+  border: 1px solid rgb(61, 60, 60);
+  background-color: rgb(34, 33, 33);
+  ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fxn {
+  width: 25%;
+  height: 100%;
+  border: 1px solid rgb(61, 60, 60);
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Mdiv {
+  width: 100%;
+  height: 10%;
+  padding-left: 3px;
+  padding-right: 3px;
+  min-width: fit-content !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+#MdivP {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:1000px) {
+  #maindiv {
+      width: 100% !important;
+  }
+}
